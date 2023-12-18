@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 
 public class DeleteMovieCommand implements Command {
-    private static final String PATH = "C:\\Users\\User\\Documents\\0\\жаба\\movie\\src\\main\\webapp\\static\\data";
+    private static final String PATH = "/Users/mac/IdeaProjects/movie1/src/main/webapp/static/data";
     private static final String FILE_EXTENSION = ".jpg";
 
     private static final String SHOW_MOVIES_COMMAND = "controller?command=show_movies&page=1";

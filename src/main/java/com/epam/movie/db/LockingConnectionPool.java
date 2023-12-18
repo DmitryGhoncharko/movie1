@@ -40,7 +40,7 @@ public enum LockingConnectionPool implements ConnectionPool {
     public boolean init() {
         if (initialized.compareAndSet(false, true)) {
             try {
-                DriverManager.registerDriver(new com.mysql.jdbc.Driver());
+                DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
             } catch (SQLException e) {
                 LOG.error("Couldn't register driver", e);
             }
